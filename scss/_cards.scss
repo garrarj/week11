@@ -1,0 +1,40 @@
+// Nesting allows you to write selectors that mimic the structure of your HTML. This allows you to use shortcuts to create your CSS. 
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    div{
+        border: 2px solid $dg;
+        padding: 10px 20px;
+        margin: 10px;
+        background-color: $offW;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h4{
+            font-size: 24px;
+            margin: 5px;
+        }
+        figcaption{
+            font-size: 10px;
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        span button{
+            padding: 10px 20px;
+            border: none;
+            color: white;
+            background-color: $deSatBlue;
+
+            //Here I have included my 'btnHover' mixin (see '_mixin.scss') and passed in two parameters for background-color and transition-duration
+
+            @include btnHover(green, 500ms);
+        }
+    }
+}

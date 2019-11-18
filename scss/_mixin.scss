@@ -1,0 +1,12 @@
+//Mixins allow you to define styles that can be re-used throughout your stylesheet
+
+//Here I have created a simple mixin called 'btnHover' (you can name them anything you want) which declares a transition and a hover event
+
+//I have also passed in the '$color' and '$time' parameters (you can name them anything you want) which I can use to declare unique values when I include my mixins elsewhere
+
+@mixin btnHover($color, $time){
+    transition: all $time linear;
+    &:hover{
+        background-color: $color;
+    }
+}

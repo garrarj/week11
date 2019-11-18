@@ -1,0 +1,15 @@
+//Here I have used the code in my %navStuff placeholder (see '_placeholder.scss'), but also overridden the 'nav a' declarations in %navStuff with my own unique styles. When you extend a placeholder, you are allowed to override the styles locally.
+
+footer{
+    @extend %navStuff;
+
+    nav a{
+        padding: 5px 15px;
+        font-size: 0.8em;
+    }
+    p{
+        color: $dg;
+        margin-top: 15px;
+        font-size: 0.6em;
+    }
+}

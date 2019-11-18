@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Raleway&display=swap');
+
+//Variables in Sass are declared with a '$' symbol
+
+$lg:  lightgrey;
+$dg: darkgrey;
+$w: white;
+$offW: snow;
+$deSatBlue: hsl(209, 50%, 58%);
+$deSatBlue15: hsla(206, 50%, 58%, 0.15);
+$deSatRed: hsl(0, 59%, 49%);
+$deSatRed15: hsla(0, 59%, 49%, 0.15);
+$deSatGreen: hsl(94, 55%, 41%);
+$deSatGreen75:hsla(94, 55%, 41%, 0.75);
+$headerFont:'Merriweather', Georgia, serif;
+$bodyFont: 'Raleway', Arial, sans-serif;
+$nerdFont: 'Courier New', Courier, monospace;

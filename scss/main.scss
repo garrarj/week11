@@ -1,0 +1,24 @@
+
+/*****You can import partial stylesheets which will then be compiled into the final CSS - Remember that the order in which you import these partials is very important*****/
+
+@import "./variables"; //This partial holds all of my colour and font variables
+@import "./mixin"; //This partial holds my mixins - Mixins allow you to define styles that can be re-used throughout your stylesheets via the @include at-rule
+@import "./placeholder"; //This partial holds my placeholders, blocks of code which can be reused via the @extend at-rule
+@import "./header"; //This partial holds my header styles
+@import "./cards"; //This partila holds styles for my cards
+@import "./footer"; //This partial holds styles for my footer
+
+
+
+
+
+/***** Interpolation *****/
+
+//In SASS, there is a feature that is similar to template strings in JavaScript. It is called Interpolation and is carried out with. #{ } Put your variable inside the curly braces and you can use the value of the variable as part of a selector, property name or property value.
+
+/*
+$b: "background";
+main{
+     #{$b}-color: red;
+}
+*/

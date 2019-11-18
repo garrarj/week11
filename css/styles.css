@@ -16,6 +16,7 @@
     --nerdFont: 'Courier New', Courier, monospace;
 }
 
+/*****Header*****/
 header{
     padding: 20px;
     margin: 10px 0;
@@ -44,4 +45,42 @@ header nav a:hover{
 header nav a:active{
     background-color: var(--deSatGreen);
     padding: 15px 100px;
+}
+
+/***** Cards *****/
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+}
+
+main div {
+    border: 2px solid var(--dg);
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: var(--offW);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main div h4{
+    font-size: 24px;
+    margin: 5px;
+}
+main div figcaption{
+    font-size: 10px;
+    text-align: center;
+}
+
+main div p{
+    text-align: center;
+}
+main div span button{
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    background-color: var(--deSatBlue);
 }

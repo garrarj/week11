@@ -1,0 +1,16 @@
+//Sass allows you to do simple arithmetic
+
+//If you invoke this function and pass in a numeral as a parameter, the numeral will be doubled
+@function double($num){
+    @return $num * 2;
+}
+
+//If you invoke this function and pass in a numeral as a parameter, the numeral will be halved
+@function half($num){
+    @return $num / 2;
+}
+
+//If you invoke this function and pass in a numeral as a parameter, the numeral will increase by one
+@function addOne($num){
+    @return $num + 1;
+}

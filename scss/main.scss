@@ -3,9 +3,11 @@
 
 @import "./variables"; //This partial holds all of my colour and font variables
 @import "./mixin"; //This partial holds my mixins - Mixins allow you to define styles that can be re-used throughout your stylesheets via the @include at-rule
+@import "./functions"; //This partial holds my simple arithmetic functions
 @import "./placeholder"; //This partial holds my placeholders, blocks of code which can be reused via the @extend at-rule
 @import "./header"; //This partial holds my header styles
-@import "./cards"; //This partila holds styles for my cards
+@import "./cards"; //This partial holds styles for my cards
+@import "./page2"; //This partial holds, for loops, built-in sass functions, and styles for page2.html
 @import "./footer"; //This partial holds styles for my footer
 
 

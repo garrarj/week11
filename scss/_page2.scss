@@ -1,0 +1,81 @@
+//Interpolation converts a variable to the value of the variable
+$c: "color";
+
+.mathy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    // color: blue;
+    #{$c}: blue;
+    font-size: addOne(24px);
+}
+
+// Arrays in Sass (called 'Lists')
+$numArray: 'one', 'two', 'three', 'four', 'five', 'six', 'seven';
+
+
+/* Sass offers a number of built-in functions that will allow you to modify colors programmatically */
+.funcSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div{
+        width: 10vw;
+        height: 10vh;
+        margin: 5px;
+    }
+    div:nth-of-type(1){
+        background-color: fade-in(red, 0.2);
+    }
+    div:nth-of-type(2){
+        background-color: fade-out(red, 0.3);
+    }
+    div:nth-of-type(3){
+        background-color: adjust-hue(red, 90deg);
+    }
+    div:nth-of-type(4){
+        background-color: lighten(red, 30%);
+    }
+    div:nth-of-type(5){
+        background-color: darken(red, 40%);
+    }
+    div:nth-of-type(6){
+        background-color: saturate(red, 10%);
+    }
+    div:nth-of-type(7){
+        background-color: desaturate(red, 10%);
+    }
+    div:nth-of-type(8){
+        background-color: grayscale(red);
+    }
+    div:nth-of-type(9){
+        background-color: complement(red);
+    }
+    div:nth-of-type(10){
+        background-color: invert(red);
+    }
+}
+
+.forSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 50px;
+    border: 2px solid $dg;
+
+    @for $i from 1 through 7{
+        span:nth-child(#{$i}){
+            background-color: darken(red, $i * 10%);
+            width: 25px;
+            height: 25px;
+            margin: 10px;
+        }
+    }
+}
+
